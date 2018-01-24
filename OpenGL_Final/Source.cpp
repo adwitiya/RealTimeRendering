@@ -358,7 +358,13 @@ void keypress(unsigned char key, int x, int y) {
 			global_translate_up = rotate_y_deg(global_translate_up, rotatez);
 			glutPostRedisplay();
 		}
+		if (key == 'q' || key == 'Q') {
 
+			static bool wire = true;
+			wire = !wire;
+			glPolygonMode(GL_FRONT_AND_BACK, (wire ? GL_LINE : GL_FILL));
+			glutPostRedisplay();
+		}
 }
 
 // Method to handle special keys function
@@ -416,6 +422,7 @@ int main(int argc, char** argv) {
 	init();
 	printf("Press T for TOON Shader\n");
 	printf("Press B for Blinn Phong Shader\n");
+	printf("Press Q to toggle wireframe\n");
 	glutKeyboardFunc(keypress);
 	glutSpecialFunc(keySpecial);
 	// Begin infinite event loop
