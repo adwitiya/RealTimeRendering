@@ -37,11 +37,5 @@
     <Text Include="..\shaders\simpleVertexShader.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="toonFragmentShader.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="toonVertexShader.txt">
-      <Filter>Source Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

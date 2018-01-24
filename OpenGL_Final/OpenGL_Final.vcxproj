@@ -138,8 +138,6 @@
   <ItemGroup>
     <Text Include="..\shaders\simpleFragmentShader.txt" />
     <Text Include="..\shaders\simpleVertexShader.txt" />
-    <Text Include="toonFragmentShader.txt" />
-    <Text Include="toonVertexShader.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
