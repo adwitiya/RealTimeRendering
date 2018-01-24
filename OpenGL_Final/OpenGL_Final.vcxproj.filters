@@ -26,9 +26,6 @@
     <ClInclude Include="maths_funcs.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\models\porsche.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\shaders\simpleFragmentShader.txt">

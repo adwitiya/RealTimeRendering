@@ -132,7 +132,6 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\models\porsche.h" />
     <ClInclude Include="maths_funcs.h" />
   </ItemGroup>
   <ItemGroup>
