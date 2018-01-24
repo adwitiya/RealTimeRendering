@@ -1,0 +1,20 @@
+#version 410
+	
+in vec3 vertex_position;
+in vec3 vertex_normals;
+uniform mat4 model, view, proj;
+
+out vec3 world_pos;
+out vec3 world_normal;
+out vec3 n_eye;
+out vec3 position_eye, normal_eye;
+
+void main(){
+
+
+	 world_pos = mat3(model) * vertex_position;
+	 world_normal = normalize(mat3(model) * vertex_normals);
+	 gl_Position = proj*view*model*vec4(vertex_position,1); 	
+	 position_eye = vec3 (view * model * vec4 (vertex_position, 1.0));
+	 normal_eye = vec3 (view * model * vec4 (vertex_normals, 0.0));
+}
