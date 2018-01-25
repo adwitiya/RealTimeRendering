@@ -211,7 +211,6 @@ void generateObjectBufferTeapot() {
 	glBindBuffer(GL_ARRAY_BUFFER, vn_vbo);
 	glVertexAttribPointer(loc2, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 
-
 }
 
 
